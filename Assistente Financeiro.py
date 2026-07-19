@@ -31,4 +31,12 @@ while True:
         transacoes.append(novo_item)
         preco.append(novo_preco)
         data.append(nova_data)    
-        print(f'\nSucesso! '{novo_item}' Foi adicionado.')
+        print(f"\nSucesso!' {novo_item}' foi adicionado. ")
+
+    elif opcao=='3':
+        print('O Total é: ')
+        total=sum(preco)
+        print()
+        print(f'O total acomulado da suas despesas é: R$ {total:.2f}')
+    else:
+        print('Opção inválida!, por favor, escolha 1, 2, 3 ou q.')
